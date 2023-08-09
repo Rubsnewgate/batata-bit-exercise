@@ -6,7 +6,7 @@
 	--secundary-blue: #1A9AF7;
 	--soft-blue: #E7F5FF;
 	--warm-black: #201E1C;
-	--just-black: #282623;
+	--black: #282623;
 	--gray: #BABABA;
 	--off-white: #FAF8F7;
 	--just-white: #FFFFFF;
@@ -26,4 +26,74 @@
 html {
 	font-size: 62.5%;
 	font-family: var(--main-font);
+}
+
+/* Header styles */
+header {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	min-width: 320px;
+	height: 334px;
+	text-align: center;
+	background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100% );
+}
+
+header img {
+	width: 150px;
+	height: 24px;
+	margin-top: 60px;
+}
+
+.header__title-container {
+	width: 90%;
+	min-width: 288px;
+	max-width: 900px;
+	height: 218px;
+	margin-top: 40px;
+}
+
+.header__title-container h1 {
+	font-size: 2.4rem;
+	font-weight: bold;
+	line-height: 2.6rem;
+	color: var(--just-white);
+}
+
+.header__title-container p {
+	margin-top: 25px;
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 1.8rem;
+	color: var(--soft-orange);
+}
+
+.header__title-container .header__button {
+	position: absolute;
+	top: calc(100% - 24px);
+	left: calc(50% - 114.5px);
+	display: block;
+	width: 229px;
+	height: 48px;
+	padding: 15px;
+	font-size: 1.4rem;
+	font-weight: bold;
+	text-decoration: none;
+	color: var(--black);
+	background-color: var(--off-white);
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	/* Sombra */
+	box-shadow: 0px 4px 8px rgba( 89, 73, 30, 0.16);
+}
+
+.header__button span {
+	display: inline-block;
+	width: 13px;
+	height: 8px;
+	margin-left: 10px;
+	background-image: url('../assets/icons/down-arrow.svg');
 }
