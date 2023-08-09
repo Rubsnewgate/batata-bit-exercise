@@ -1,0 +1,29 @@
+/* Global variables */
+:root {
+	/* Colors */
+	--bitcoin-orange: #F7931A;
+	--soft-orange: #FFE9D5;
+	--secundary-blue: #1A9AF7;
+	--soft-blue: #E7F5FF;
+	--warm-black: #201E1C;
+	--just-black: #282623;
+	--gray: #BABABA;
+	--off-white: #FAF8F7;
+	--just-white: #FFFFFF;
+	/* Fonts */
+	--main-font: 'DM Sans', sans-serif;
+	--second-font: 'Inter', sans-serif;
+	/* Font-size */
+}
+
+/* Global styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: var(--main-font);
+}
