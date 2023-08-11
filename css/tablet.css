@@ -1,0 +1,20 @@
+.section__exchange-tables {
+	display: flex;
+	width: 930px;
+	margin: 0 auto;
+}
+.div__currency-table .currency__table-title, .div__commission-table .commission__table-title {
+	text-align: center;
+	margin-left: 0;
+}
+
+.product__cards-container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 930px;
+	margin: 0 auto;
+}
+
+.plans__cards-slider {
+	justify-content: center;
+}
