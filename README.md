@@ -1,2 +1,13 @@
-# batata-bit-exercise
-Página web estática para el curso de Platzi: Responsive desing, maquetación mobile first.  
+# Batatabit page 👾🐱‍💻
+
+------------
+
+### Mobile-first website, a practical exercise from Platzi's Mobile First course.
+
+#### Technologies I used:
+- HTML 5
+- CSS 3
+
+------------
+
+- RubsNewgate
