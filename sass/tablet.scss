@@ -1,0 +1,18 @@
+@import './global.scss';
+
+// Exchange tables
+.exchange-tables {
+	@include flexbox(row, center, center, null);
+	margin-bottom: 50px;
+}
+
+// PRODUCT DETAIL SECTION
+.product__cards-container {
+	@include flexbox(row, center, null, null);
+	margin-bottom: 50px;
+}
+
+// PLANS SECTION
+.plans__cards--slider {
+	@include flexbox(row, center, center, null);
+}

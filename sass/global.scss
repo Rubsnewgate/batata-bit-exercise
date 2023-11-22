@@ -1,0 +1,46 @@
+// Primary Colors
+$bitcoin-orange: #F7931A;
+$soft-orange: #FFE9D5;
+$secundary-blue: #1A9AF7;
+$soft-blue: #E7F5FF;
+
+// Secondary Colors
+$warm-black: #201E1C;
+$black: #282623;
+$gray: #BABABA;
+$md-gray: #757575;
+$white: #FFFFFF;
+$off-white: #FAF8F7;
+
+// Typography
+$main-font: 'DM Sans', sans-serif;
+$second-font: 'Inter', sans-serif;
+$lg-size: 2.4rem;
+$xlg-size: 5.2rem;
+$md-size: 1.8rem;
+$sm-size: 1.4rem;
+$xsm-size: 1.2rem;
+$tb-size: 1.6rem;
+
+// Global resets
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+body {
+	font-family: $main-font;
+}
+
+// Flexbox machine
+@mixin flexbox($direction:null, $content:null, $items:null, $gap:null) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $content;
+	align-items: $items;
+	gap: $gap;
+}

@@ -1,0 +1,422 @@
+@import './global.scss';
+
+// HEADER STYLES
+.header {
+	@include flexbox(column, null, center, null);
+	position: relative;
+	width: 100%;
+	height: 330px;
+	text-align: center;
+	background: linear-gradient(207.8deg, $warm-black 16.69%, $bitcoin-orange 100%);
+}
+.header__logo {
+	width: 150px;
+	height: 24px;
+	margin-top: 60px;
+}
+.header__title-container {
+	width: 90%;
+	max-width: 900px;
+	height: 220px;
+	margin-top: 40px;
+}
+.header__title {
+	font-size: $lg-size;
+	font-weight: bold;
+	line-height: 2.5rem;
+	color: $white;
+}
+.header__caption {
+	margin-top: 25px;
+	font-size: $sm-size;
+	font-weight: 500;
+	line-height: 1.8rem;
+	color: $soft-orange;
+}
+.header__btn {
+	display: block;
+	position: absolute;
+	top: calc(100% - 24px);
+	left: calc(50% - 115px);
+	width: 230px;
+	height: 48px;
+	padding: 15px;
+	font-size: $sm-size;
+	font-weight: bold;
+	text-decoration: none;
+	color: $black;
+	background-color: $off-white;
+	border: none;
+	border-radius: 10px;
+	box-shadow: -2px 2px 5px rgba( 89, 73, 30, 0.2);
+	span {
+		display: inline-block;
+		width: 12px;
+		height: 8px;
+		margin-left: 10px;
+		background-image: url('../assets/icons/down-arrow.svg');
+	}
+}
+.header__btn:hover {
+	cursor: pointer;
+}
+
+// MAIN CONTAINER
+.main-wrapper {
+	width: 100%;
+	height: auto;
+	background-color: $off-white;
+}
+
+// EXCHANGE SECTION
+.exchange-container {
+	@include flexbox(column, null, center, null);
+	width: 100%;
+	height: auto;
+	padding: 80px 0 30px 0;
+	text-align: center;
+}
+.exchange--img {
+	width: 200px;
+	height: 200px;
+	margin-bottom: 50px;
+	background-image: url('../assets/imgs/bitcoin.svg');
+	background-size: contain;
+}
+.exchange__title-container {
+	width: 90%;
+	max-width: 900px;
+	margin-bottom: 50px;
+}
+.exchange__title {
+	margin-bottom: 30px;
+	font-size: $lg-size;
+	font-weight: bold;
+	line-height: 2.5rem;
+	color: $black;
+}
+.exchange__caption {
+	margin-bottom: 30px;
+	font-size: $sm-size;
+	font-weight: 500;
+	line-height: $sm-size;
+	color: $md-gray;
+}
+// Exchange tables
+.exchange-tables {
+	@include flexbox(column, null, center, null);
+	width: 90%;
+}
+.currency-table, .commission-table {
+	@include flexbox(column, center, center, null);
+	width: 100%;
+	max-width: 500px;
+	height: 360px;
+	font-family: $second-font;
+}
+.currency-table__info, .commission-table__info {
+	width: 100%;
+	max-width: 300px;
+	height: 250px;
+}
+.table{
+	width: 100%;
+	height: 100%;
+}
+.table-title {
+	margin-bottom: 15px;
+	font-size: $md-size;
+	font-weight: bold;
+	line-height: 2.2rem;
+}
+.table-data{
+	width: 50%;
+	padding-left: 40px;
+	text-align: start;
+	font-size: $tb-size;
+	font-weight: 500;
+	line-height: 2rem;
+	color: $gray;
+	background-color: $white;
+}
+.table__top-left{
+	border-radius: 15px 0 0 0;
+}
+.table__top-right {
+	border-radius: 0 15px 0 0;
+}
+.table__bottom-left {
+	border-radius: 0 0 0 15px;
+}
+.table__bottom-right {
+	border-radius: 0 0 15px 0;
+}
+.table__right {
+	font-size: $sm-size;
+	line-height: 1.6rem;
+	color: $md-gray;
+}
+.table__date {
+	width: 190px;
+	height: 30px;
+	margin-bottom: 15px;
+	padding: 8px;
+	border-radius: 10px;
+}
+.date__caption {
+	font-size: $xsm-size;
+	font-weight: 300;
+	line-height: 1.5rem;
+	color: $warm-black;
+}
+// Currency table
+.currency-table__title {
+	color: $bitcoin-orange;
+}
+.currency__table-date {
+	margin-top: 10px;
+	background-color: $soft-orange;
+}
+.arrow {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin-left: 10px;
+	background-size: contain;
+}
+.arrow-down {
+	background-image: url('../assets/icons/trending-down.svg');
+}
+.arrow-up {
+	background-image: url('../assets/icons/trending-up.svg');
+}
+// Commission table
+.commission-table__title {
+	color: $secundary-blue;
+}
+.commission__table-date {
+	margin-top: 10px;
+	background-color: $soft-blue;
+}
+
+// PRODUCT DETAIL SECTION
+.product-detail {
+	@include flexbox(column, null, center, null);
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 20px 10px;
+	background-color: $black;
+}
+.product-detail--batata-logo {
+	position: absolute;
+	top: calc(0% - 12.5px);
+	left: calc(50% - 20px);
+	width: 40px;
+	height: 25px;
+	background-image: url('../assets/icons/batata.svg');
+}
+.product-detail__heading {
+	width: 90%;
+	max-width: 900px;
+	height: auto;
+	margin-top: 50px;
+	text-align: center;
+}
+.heading__title {
+	margin-bottom: 20px;
+	font-size: $lg-size;
+	font-weight: bold;
+	color: $white;
+}
+.heading__caption {
+	margin-bottom: 20px;
+	font-size: $sm-size;
+	font-weight: 500;
+	color: #808080;
+}
+// Product detail cards
+// product__cards-container {}
+.product-card {
+	width: 90%;
+	max-width: 400px;
+	min-height: 150px;
+	margin: 15px;
+	padding: 15px;
+	background-color: $warm-black;
+	border-radius: 5px;
+	box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.18);
+}
+.product-card--icon {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-bottom: 10px;
+	background-size: contain;
+}
+.clock-icon {
+	background-image: url('../assets/icons/clock.svg');
+}
+.eye-icon {
+	background-image: url('../assets/icons/eye.svg');
+}
+.dolar-icon {
+	background-image: url('../assets/icons/dollar-sign.svg');
+}
+.check-icon {
+	background-image: url('../assets/icons/check-circle.svg');
+}
+.product-card__title {
+	margin-bottom: 15px;
+	font-size: $md-size;
+	font-weight: bold;
+	line-height: 1.8rem;
+	color: $white;
+}
+.product-card__body {
+	font-size: $sm-size;
+	font-weight: 500;
+	line-height: 1.8rem;
+	color: #808080;
+}
+
+// IMAGE SEPARATOR
+.img-separator {
+	width: 100%;
+	height: 50vh;
+	min-height: 320px;
+	text-align: center;
+	background-image: url('../assets/imgs/bitcoinbaby2x.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.img-separator__title {
+	padding-top: 60px;
+	font-size: $lg-size;
+	color: $white;
+}
+
+// PLANS SECTION
+.plans {
+	width: 100%;
+	padding-bottom: 50px;
+	text-align: center;
+}
+.plans__title-container {
+	width: 90%;
+	height: auto;
+	margin: 0 auto 50px auto;
+}
+.plans__title{
+	padding-top: 50px;
+	font-size: $lg-size;
+	font-weight: bold;
+	line-height: 2.5rem;
+	color: $black;
+}
+.plans__caption {
+	padding-top: 30px;
+	font-size: $sm-size;
+	font-weight: 500;
+	line-height: 1.8rem;
+	color: $md-gray;
+}
+// Cards
+// plan__info {}
+.plans__cards--slider {
+	display: flex;
+	height: 316px;
+	overflow-x: scroll;
+	overscroll-behavior-x: contain;
+	scroll-snap-type: x proximity;
+}
+.plan__card {
+	position: relative;
+	scroll-snap-align: center;
+	width: 70%;
+	max-width: 300px;
+	height: 260px;
+	margin: 20px 5px 0;
+	padding: 0 15px;
+	background-color: $white;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px rgba(89, 73, 30, 0.18);
+}
+.recommended {
+	position: absolute;
+	top: calc(0% - 15px);
+	left: calc(50% - 60px);
+	padding: 8px;
+	width: 120px;
+	height: 30	px;
+	font-size: $xsm-size;
+	color: $white;
+	background-color: $bitcoin-orange;
+	border-radius: 10px;
+}
+.plan__info--title {
+	padding: 35px 30px 10px;
+	font-size: $tb-size;
+	font-weight: 500;
+	line-height: 1.8rem;
+	color: $black;
+}
+.plan__info--price {
+	padding: 5px 0;
+	font-size: $xlg-size;
+	font-weight: bold;
+	color: $black;
+}
+.plan__info--price span {
+	font-size: $xsm-size;
+	font-weight: 300;
+	vertical-align: text-top;
+}
+.plan__info--saving {
+	font-size: $xsm-size;
+	color: $md-gray;
+}
+.plan__info--btn {
+	width: 150px;
+	height: 48px;
+	margin: 20px 0;
+	font-size: $sm-size;
+	font-weight: bold;
+	line-height: 1.8rem;
+	color: $black;
+	background-color: $off-white;
+	border: 2px solid $bitcoin-orange;
+	border-radius: 10px;
+}
+.plan__info--btn span {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url('../assets/icons/orange-right-arrow.svg');
+	vertical-align: text-bottom;
+}
+
+// FOOTER
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
+	height: 150px;
+	background-color: $bitcoin-orange;
+}
+.footer__list {
+	font-size: $sm-size;
+	font-weight: 500;
+	line-height: 1.8rem;
+	list-style: none;
+}
+.list--item {
+	margin: 10px 0;
+	color: $white;
+	text-decoration: none;
+}
+.item__link {
+	color: $white;
+	text-decoration: none;
+}

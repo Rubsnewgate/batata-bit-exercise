@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../sass/global.scss","../sass/tablet.scss"],"names":[],"mappings":"AAyBA;EACC;EACA;EACA;;;AAED;EACC;EACA;;;AAED;EACC,aApBW;;;ACZZ;EDqCC;EACA,gBCrCiB;EDsCjB,iBCtCsB;EDuCtB,aCvC8B;EAC9B;;;AAID;ED+BC;EACA,gBC/BiB;EDgCjB,iBChCsB;EACtB;;;AAID;EDyBC;EACA,gBCzBiB;ED0BjB,iBC1BsB;ED2BtB,aC3B8B","file":"tablet.css"}
